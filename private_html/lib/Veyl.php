@@ -9,14 +9,18 @@ class V
     /** @var string Absolute path to the private_html folder. */
     public static $root;
 
+    /** @var string Absolute path to the public web folder. */
+    public static $public;
+
     private static $cfg;
     private static $data;
     private static $db;
     private static $nonce;
 
-    public static function init($root)
+    public static function init($root, $public = null)
     {
         self::$root = rtrim($root, '/');
+        self::$public = $public === null ? dirname(self::$root) . '/public_html' : rtrim($public, '/');
     }
 
     // ---------------------------------------------------------------- config

@@ -324,7 +324,26 @@ charges back after you have paid an influencer, the order is marked and appears 
 
 ---
 
-## 8. Everything still to fill in
+## 8. Changing the stylesheet or the script
+
+`.htaccess` tells browsers to keep CSS and JavaScript for a week, which keeps the
+site fast. To stop that hiding your changes, the page stamps each address with the
+file's own modification date:
+
+```html
+<link rel="stylesheet" href="/assets/css/veyl.css?v=1793158773">
+```
+
+Upload a changed `veyl.css` and the number changes by itself, so browsers fetch the
+new copy immediately. There is nothing to remember and no version to bump by hand.
+
+If you ever edit a file in place on the server and the change does not appear, check
+that the number in the page source moved. If it did not, the file did not actually
+save.
+
+---
+
+## 9. Everything still to fill in
 
 ### Must be done before taking real money
 

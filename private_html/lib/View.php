@@ -35,6 +35,21 @@ class View
         exit;
     }
 
+    /**
+     * A stylesheet or script address, stamped with the file's own modification date.
+     *
+     * The .htaccess tells browsers to keep CSS and JS for a week. Without a stamp,
+     * editing a file does not change its address, so browsers keep serving the old
+     * copy and the change never appears. Using the file date means the address
+     * changes by itself the moment the file does, and nothing has to be remembered.
+     */
+    public static function asset($path)
+    {
+        $file = V::$public . $path;
+        $stamp = is_file($file) ? filemtime($file) : null;
+        return self::e($path . ($stamp ? '?v=' . $stamp : ''));
+    }
+
     /** Escape for HTML. Short name because templates use it constantly. */
     public static function e($value)
     {

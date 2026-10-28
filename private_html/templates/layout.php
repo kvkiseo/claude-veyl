@@ -41,7 +41,7 @@ $canonical = $siteUrl . $meta['path'];
 
 <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/veyl.css?v=2">
+<link rel="stylesheet" href="<?= View::asset('/assets/css/veyl.css') ?>">
 <script nonce="<?= View::e($nonce) ?>">document.documentElement.classList.replace("no-js","js")</script>
 <?php if (!empty($meta['jsonLd'])): ?>
 <script type="application/ld+json" nonce="<?= View::e($nonce) ?>"><?= json_encode($meta['jsonLd'], JSON_UNESCAPED_SLASHES) ?></script>
@@ -110,6 +110,6 @@ $canonical = $siteUrl . $meta['path'];
   </div>
 </footer>
 
-<script src="/assets/js/site.js?v=2" defer nonce="<?= View::e($nonce) ?>"></script>
+<script src="<?= View::asset('/assets/js/site.js') ?>" defer nonce="<?= View::e($nonce) ?>"></script>
 </body>
 </html>

@@ -10,7 +10,10 @@ $priv = getenv('VEYL_PRIVATE')
 
 require_once $priv . '/lib/Veyl.php';
 require_once $priv . '/lib/View.php';
-V::init($priv);
+
+// This file always lives in <public folder>/api, so its parent is the web root.
+// View::asset() needs it to stamp stylesheets and scripts with their file date.
+V::init($priv, dirname(__DIR__));
 
 ini_set('display_errors', '0');
 error_reporting(E_ALL);
