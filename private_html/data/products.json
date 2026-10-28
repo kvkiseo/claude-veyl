@@ -1,0 +1,1027 @@
+{
+  "_readme": "The one data file for the whole Veyl site. Every product card, product page, price and checkout amount is generated from here. It lives outside the web root, so it is never reachable by URL. To add a product PDF: drop <slug>.pdf into private_html/kits/, then change that product's \"status\" to \"live\". See README.md.",
+  "site": {
+    "name": "Veyl",
+    "url": "https://veyl.kiseo.io",
+    "supportEmail": "kenneth@veyl.kiseo.io",
+    "tagline": "Calm, practical guides for the decisions you only make once.",
+    "figureNote": "Figures are US averages and vary widely by state, provider and situation. They show what is at stake in the decision, not what you will pay or save."
+  },
+  "pricing": {
+    "_readme": "The only place prices and commission are defined. The server reads these values; the browser never sets a price. All amounts are in cents.",
+    "currency": "USD",
+    "basePriceCents": 9900,
+    "discountPercent": 10,
+    "commissionCents": 5000,
+    "paypalFeePercentForReporting": 3.49,
+    "paypalFeeFixedCentsForReporting": 49
+  },
+  "sectionBlurbs": {
+    "Lessons": "Short, plain-language explanations of how this deal actually works, and where the money usually moves.",
+    "Script": "Word-for-word questions to ask and lines to say, so you are never caught without a response.",
+    "Forms": "Fillable pages you complete as you go, so your numbers and answers live in one place.",
+    "Checklist": "A step-by-step list you tick off, so nothing is missed between first contact and signature."
+  },
+  "products": [
+    {
+      "slug": "remodel-contractor-bid-guide",
+      "status": "coming_soon",
+      "name": "Hiring a Remodel Contractor",
+      "oneLine": "Comparing bids and signing a contract for a kitchen or bathroom remodel.",
+      "metaTitle": "Hiring a Remodel Contractor — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for comparing contractor bids and reading the contract before you sign a kitchen or bathroom remodel.",
+      "stake": {
+        "amount": "$24,000",
+        "lead": "at stake",
+        "eyebrow": "What is at stake in this decision",
+        "line": "The median spend on a kitchen renovation.",
+        "source": "Source: Houzz & Home Study 2026",
+        "verified": true,
+        "note": ""
+      },
+      "whatThisIs": "You are about to hire someone to tear out part of your home and rebuild it. Three contractors will hand you three bids that look similar and are not, and one of them will become a contract you live with for months.",
+      "ifYouUse": "You compare the three bids line by line instead of by their totals, so you can see what each one leaves out. You know which questions to ask about permits, allowances, change orders and the payment schedule, and you have the wording ready. You walk into the signing with your own notes rather than the contractor's summary.",
+      "ifYouSkip": "The cheapest bid is usually the one missing the most lines. Permits, demolition, haul-away and cleanup get added back later as change orders, and the allowance for cabinets or tile turns out to be a placeholder rather than a price. On a project at this scale, a handful of gaps you did not price is a serious sum, and by then the work has started.",
+      "inside": {
+        "Lessons": [
+          "Why an allowance is not a price, and what happens when you pick the tile.",
+          "How change orders are priced once demolition has started.",
+          "What a lien waiver does, and why you ask for one at every payment."
+        ],
+        "Script": [
+          "\"Please send the bid with permits, demolition, haul-away and final cleanup shown as separate lines.\"",
+          "\"Is the cabinet figure a fixed price or an allowance? What is it based on?\"",
+          "\"What is your written process for change orders, and who signs one before work continues?\""
+        ],
+        "Forms": [
+          "A three-column bid sheet where you enter each contractor's number line by line.",
+          "A contractor record: license number, insurance carrier, expiry date, two checked references.",
+          "A payment schedule page tying each payment to a finished stage rather than a date."
+        ],
+        "Checklist": [
+          "License and insurance verified with the issuing body, not just seen on paper.",
+          "Every bid restated on the same list of lines before any total is compared.",
+          "Start date, substantial-completion date and the remedy for overrun are in the contract."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 3 — Allowances",
+          "body": "An allowance is a placeholder, not a price. The bid says $6,500 for cabinets because nobody has chosen the cabinets yet. When you choose them, the difference is billed to you on top of the contract price.",
+          "callout": "Ask what the allowance is based on. \"Builder grade\" is not an answer you can compare."
+        },
+        "Script": {
+          "heading": "Asking for a like-for-like bid",
+          "lines": [
+            "\"Could you send this with permits, demolition and cleanup on their own lines?\"",
+            "\"Is the cabinet number fixed, or an allowance?\"",
+            "\"If it is an allowance, what product is it priced from?\""
+          ]
+        },
+        "Forms": {
+          "heading": "Bid comparison",
+          "fields": [
+            {
+              "label": "Demolition and haul-away",
+              "value": ""
+            },
+            {
+              "label": "Permits",
+              "value": ""
+            },
+            {
+              "label": "Cabinets — fixed or allowance?",
+              "value": ""
+            },
+            {
+              "label": "Final cleanup",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before you sign",
+          "items": [
+            {
+              "text": "License verified with the state board",
+              "done": true
+            },
+            {
+              "text": "Insurance certificate received direct from the insurer",
+              "done": true
+            },
+            {
+              "text": "Payments tied to finished stages",
+              "done": false
+            },
+            {
+              "text": "Change-order process in writing",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    },
+    {
+      "slug": "car-buying-out-the-door-guide",
+      "status": "coming_soon",
+      "name": "Buying a Car, Out the Door",
+      "oneLine": "Agreeing a price, handling the finance office, and knowing what your trade-in is really worth.",
+      "metaTitle": "Buying a Car, Out the Door — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for agreeing an out-the-door car price, declining finance-office add-ons, and checking a trade-in for negative equity.",
+      "stake": {
+        "amount": "$7,214",
+        "lead": "at stake",
+        "eyebrow": "What is at stake in this decision",
+        "line": "The average amount still owed on an underwater trade-in, which is carried into the next loan.",
+        "source": "Source: Edmunds, Q4 2025",
+        "verified": true,
+        "note": ""
+      },
+      "whatThisIs": "You have found a car. The conversation is about to become a conversation about a monthly payment, and then a separate conversation in a small office about products you have not heard of. Both of those are where the price changes.",
+      "ifYouUse": "You ask for one number, out the door, in writing, before you go in. You know what each finance-office product is, which ones you want, and how to decline the rest without a negotiation. If you have a trade-in, you know what you owe against what it is worth, and what happens if you roll the gap into a new loan.",
+      "ifYouSkip": "A negotiation about monthly payments can hide almost anything: a longer term, a rolled-in balance, an add-on you did not price. If you are underwater on a trade-in, the shortfall does not disappear — it moves into the new loan and you start the next car owing more than it is worth. On an average underwater trade-in that is several thousand dollars carried forward.",
+      "inside": {
+        "Lessons": [
+          "Out-the-door price versus monthly payment, and why only one of them is a price.",
+          "What each finance-office product actually covers, in plain words.",
+          "Negative equity: what rolling it forward does to the next loan."
+        ],
+        "Script": [
+          "\"Please email me the out-the-door price, itemized, before I come in.\"",
+          "\"I am not adding any products today. Please print the contract without them.\"",
+          "\"What is the payoff on my trade-in, and what are you allowing for it? I would like both numbers separately.\""
+        ],
+        "Forms": [
+          "An out-the-door worksheet: vehicle price, fees, taxes, and the total you will actually pay.",
+          "A trade-in page: payoff amount, offer, and the gap between them.",
+          "An add-on decision page listing each product offered, its price, and your answer."
+        ],
+        "Checklist": [
+          "Out-the-door price received in writing before the visit.",
+          "Trade-in payoff confirmed with your lender, not estimated by the dealer.",
+          "Final contract read with the add-on lines checked against your decision page."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 2 — The monthly payment trap",
+          "body": "A monthly payment is made of four things: price, term, rate and anything rolled in. Change the term and the payment falls while the amount you pay rises. This is why the price conversation has to finish before the payment conversation starts.",
+          "callout": "One number, out the door, in writing. Everything else follows from it."
+        },
+        "Script": {
+          "heading": "In the finance office",
+          "lines": [
+            "\"I am not adding any products today.\"",
+            "\"Please print the contract without them, and I will read it.\"",
+            "\"If that changes the rate, tell me now and show me both.\""
+          ]
+        },
+        "Forms": {
+          "heading": "Trade-in position",
+          "fields": [
+            {
+              "label": "Payoff quoted by my lender",
+              "value": ""
+            },
+            {
+              "label": "Dealer's allowance",
+              "value": ""
+            },
+            {
+              "label": "Gap (payoff minus allowance)",
+              "value": ""
+            },
+            {
+              "label": "Rolling this into the new loan? Yes / No",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before you sign",
+          "items": [
+            {
+              "text": "Out-the-door price in writing",
+              "done": true
+            },
+            {
+              "text": "Payoff confirmed with my own lender",
+              "done": true
+            },
+            {
+              "text": "Add-on lines match my decision page",
+              "done": false
+            },
+            {
+              "text": "Term and rate read on the final contract",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    },
+    {
+      "slug": "buy-a-small-business-guide",
+      "status": "coming_soon",
+      "name": "Buying a Small Business",
+      "oneLine": "Checking whether the profit a seller claims is really there before you pay for it.",
+      "metaTitle": "Buying a Small Business — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for checking a small business seller's numbers, asking the right questions in diligence, and knowing what to verify before closing.",
+      "stake": {
+        "amount": "$350,000",
+        "lead": "at stake",
+        "eyebrow": "What is at stake in this decision",
+        "line": "The median price of a small business sold through a broker.",
+        "source": "Source: BizBuySell 2025 Year in Review",
+        "verified": true,
+        "note": ""
+      },
+      "whatThisIs": "Someone is selling you a going concern and a number that describes how much it earns. You are not really buying the business; you are buying that number, and almost everything depends on whether it survives being checked.",
+      "ifYouUse": "You know which documents to ask for, in which order, and what each one is supposed to agree with. You can tell an owner's add-back from a real expense, and you have the questions ready for the ones that do not reconcile. You go into negotiation knowing which parts of the story you have actually verified.",
+      "ifYouSkip": "Seller's discretionary earnings is a number a seller constructs. Unverified, it can include wages for work that still needs doing, a one-off contract that will not repeat, or customers who are leaving with the owner. At the median price for a business of this kind, paying a multiple of a number that was never checked is the costliest mistake in the whole process.",
+      "inside": {
+        "Lessons": [
+          "Seller's discretionary earnings: what it is, and which add-backs survive scrutiny.",
+          "Which three documents have to agree, and what it means when they do not.",
+          "Customer concentration, and why it changes what a business is worth."
+        ],
+        "Script": [
+          "\"Please send three years of tax returns alongside the profit and loss statements.\"",
+          "\"Can you walk me through each add-back and why it will not recur for me?\"",
+          "\"What share of revenue comes from your largest customer, and how long have they been with you?\""
+        ],
+        "Forms": [
+          "A document request log: what you asked for, the date, and what arrived.",
+          "An add-back page where each adjustment is listed, questioned and accepted or rejected.",
+          "A reconciliation page comparing tax returns, bank deposits and the profit and loss statements."
+        ],
+        "Checklist": [
+          "Tax returns received direct and compared against the profit and loss statements.",
+          "Every add-back questioned individually and written down.",
+          "Customer concentration, lease terms and staff commitments confirmed in writing."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 4 — Add-backs",
+          "body": "An add-back is an expense the seller says you will not have. Some are fair: a one-off legal bill, the owner's personal car. Some are not: a salary for work somebody still has to do. Each one has to be argued on its own.",
+          "callout": "If an add-back is really a job, price the job."
+        },
+        "Script": {
+          "heading": "Asking about the numbers",
+          "lines": [
+            "\"Can we go through the add-backs one at a time?\"",
+            "\"Who does that work after you leave, and what do they cost?\"",
+            "\"Does this figure appear the same way on the tax return?\""
+          ]
+        },
+        "Forms": {
+          "heading": "Add-back review",
+          "fields": [
+            {
+              "label": "Add-back described by seller",
+              "value": ""
+            },
+            {
+              "label": "Amount",
+              "value": ""
+            },
+            {
+              "label": "Will this cost recur for me? Yes / No",
+              "value": ""
+            },
+            {
+              "label": "Evidence seen",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before you make an offer",
+          "items": [
+            {
+              "text": "Three years of tax returns received",
+              "done": true
+            },
+            {
+              "text": "Bank deposits compared with reported revenue",
+              "done": false
+            },
+            {
+              "text": "Every add-back listed and questioned",
+              "done": false
+            },
+            {
+              "text": "Largest customer's share of revenue confirmed",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    },
+    {
+      "slug": "franchise-fdd-guide",
+      "status": "coming_soon",
+      "name": "Reading a Franchise Disclosure Document",
+      "oneLine": "Working through an FDD, and using the waiting period the law gives you.",
+      "metaTitle": "Reading a Franchise Disclosure Document — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for working through a franchise disclosure document item by item, and using the FTC's 14-day waiting period before you sign or pay.",
+      "stake": {
+        "amount": "14 days",
+        "lead": "to read it",
+        "eyebrow": "What the law gives you",
+        "line": "The waiting period a franchisor must give you before you can be asked to sign anything or pay anything.",
+        "source": "Source: FTC Franchise Rule, 16 CFR §436.2(a)",
+        "verified": true,
+        "note": "We show no average investment figure here. Published estimates come from private surveys of filed documents rather than from a regulator, and they vary so much by sector that an average would mislead. Your own figure is in Item 7 of the document in front of you."
+      },
+      "whatThisIs": "A franchise disclosure document is a few hundred pages long and arrives at the point where you are already excited. Everything that will matter later is in it, and the law gives you two weeks to read it before anyone can ask you for a signature or a payment.",
+      "ifYouUse": "You work through the items that carry the money — the investment table, the fees, the territory, the renewal and transfer terms, the litigation history, and the list of former owners. You have the questions ready for existing franchisees, and you use the full waiting period rather than letting it pass.",
+      "ifYouSkip": "The document is where the ongoing fees, the territory limits and the terms for leaving are defined, and none of them are negotiable afterwards. The list of former franchisees is in there too, and it is the single most useful page in the book. Signing without reading it means committing years of your working life to terms you have not seen.",
+      "inside": {
+        "Lessons": [
+          "What the 14-day period is for, and what resets it.",
+          "The items that decide your economics: investment, fees, territory, renewal, transfer.",
+          "Why the list of former franchisees is the most useful page in the document."
+        ],
+        "Script": [
+          "\"I received the document on [date]. I will come back to you after the full 14 days.\"",
+          "\"May I have the contact details for franchisees who left in the last three years?\"",
+          "\"Is my territory exclusive, and what exactly can the franchisor place inside it?\""
+        ],
+        "Forms": [
+          "An item-by-item worksheet with space for what each one says and what you want to ask.",
+          "A franchisee call log: who you spoke to, how long they have been open, what they said.",
+          "An ongoing-cost page listing every recurring fee and what it is charged on."
+        ],
+        "Checklist": [
+          "Date the document was received written down, and the 14th day marked.",
+          "At least five current and two former franchisees contacted.",
+          "A franchise lawyer has read the agreement before any signature."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 1 — The 14 days are yours",
+          "body": "The franchisor must give you the disclosure document at least 14 calendar days before you sign a binding agreement or pay any money. The clock is a floor, not a deadline. Nothing stops you taking longer.",
+          "callout": "Write down the date it arrived. It is the only date that matters."
+        },
+        "Script": {
+          "heading": "Calling a former franchisee",
+          "lines": [
+            "\"I am looking at the same franchise. Would you have ten minutes?\"",
+            "\"What surprised you most in the first year?\"",
+            "\"If you were deciding again, what would you want to know first?\""
+          ]
+        },
+        "Forms": {
+          "heading": "Ongoing costs",
+          "fields": [
+            {
+              "label": "Royalty — rate and charged on what",
+              "value": ""
+            },
+            {
+              "label": "Marketing fund contribution",
+              "value": ""
+            },
+            {
+              "label": "Technology or software fees",
+              "value": ""
+            },
+            {
+              "label": "Required refurbishment interval",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before you sign",
+          "items": [
+            {
+              "text": "Date document received recorded",
+              "done": true
+            },
+            {
+              "text": "Day 14 marked on the calendar",
+              "done": true
+            },
+            {
+              "text": "Five current franchisees contacted",
+              "done": false
+            },
+            {
+              "text": "Agreement reviewed by a franchise lawyer",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    },
+    {
+      "slug": "assisted-living-guide",
+      "status": "coming_soon",
+      "name": "Choosing Assisted Living",
+      "oneLine": "Comparing facilities and reading the residency agreement for a parent.",
+      "metaTitle": "Choosing Assisted Living — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for comparing assisted living facilities, asking the right questions on a tour, and reading the residency agreement before signing.",
+      "stake": {
+        "amount": "$74,400 a year",
+        "lead": "at stake",
+        "eyebrow": "What is at stake in this decision",
+        "line": "The national median cost of assisted living, or about $6,200 a month.",
+        "source": "Source: CareScout Cost of Care Survey, 2025",
+        "verified": true,
+        "note": ""
+      },
+      "whatThisIs": "You are comparing places for a parent to live, usually in a difficult week, usually quickly. The brochures compare well and the contracts do not, and the contract is the part that decides what happens as needs change.",
+      "ifYouUse": "You tour with the same list of questions at every facility, so your notes are actually comparable. You know which parts of the residency agreement to read closely: the care-level pricing, what triggers a rate change, the notice periods, and the conditions under which a resident can be asked to leave. You have the questions written down before you walk in.",
+      "ifYouSkip": "The headline monthly fee is rarely the whole fee. Care levels are assessed and re-assessed, and the price moves with them. Notice periods, deposits and discharge conditions differ from one agreement to the next and are difficult to read for the first time in a hurry. At a national median of this size, a term you did not notice is expensive and hard to undo.",
+      "inside": {
+        "Lessons": [
+          "How care levels are assessed, and what makes a monthly fee change.",
+          "Base rent, care fees, community fees and what sits outside all three.",
+          "Notice periods, deposits and the conditions for discharge."
+        ],
+        "Script": [
+          "\"How is a care level assessed, how often is it reviewed, and what notice do we get of a change?\"",
+          "\"What is included in the monthly fee, and what is billed separately?\"",
+          "\"Under what circumstances could you ask a resident to leave, and how much notice applies?\""
+        ],
+        "Forms": [
+          "A side-by-side tour sheet so three visits produce comparable notes.",
+          "A monthly-cost page separating base fee, assessed care, and extras.",
+          "A questions page for the agreement, with room for the answer and who gave it."
+        ],
+        "Checklist": [
+          "The same questions asked at every facility, written down at the time.",
+          "A blank copy of the residency agreement obtained before deciding.",
+          "The state inspection or licensing record checked for each facility."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 2 — What moves the monthly fee",
+          "body": "Most agreements separate rent from care. Care is priced by an assessed level, and the level is reviewed. A change in health can change the monthly fee without the agreement being renegotiated.",
+          "callout": "Ask for the care-level price list in writing. It is rarely in the brochure."
+        },
+        "Script": {
+          "heading": "On the tour",
+          "lines": [
+            "\"How often is a care level reviewed?\"",
+            "\"What notice do we get before a fee changes?\"",
+            "\"What is billed on top of the monthly fee?\""
+          ]
+        },
+        "Forms": {
+          "heading": "Monthly cost, facility A",
+          "fields": [
+            {
+              "label": "Base monthly fee",
+              "value": ""
+            },
+            {
+              "label": "Assessed care level and cost",
+              "value": ""
+            },
+            {
+              "label": "One-time community fee",
+              "value": ""
+            },
+            {
+              "label": "Billed separately (list)",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before signing",
+          "items": [
+            {
+              "text": "Blank residency agreement received",
+              "done": true
+            },
+            {
+              "text": "Care-level price list in writing",
+              "done": false
+            },
+            {
+              "text": "Notice periods read and noted",
+              "done": false
+            },
+            {
+              "text": "State inspection record checked",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    },
+    {
+      "slug": "wedding-budget-vendor-guide",
+      "status": "coming_soon",
+      "name": "Wedding Budget and Vendor Contracts",
+      "oneLine": "Setting a budget that holds, and reading the vendor contracts before you pay a deposit.",
+      "metaTitle": "Wedding Budget and Vendor Contracts — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for building a wedding budget that holds and reading vendor contracts before deposits are paid.",
+      "stake": {
+        "amount": "$34,000",
+        "lead": "at stake",
+        "eyebrow": "What is at stake in this decision",
+        "line": "The average cost of a US wedding. The median, which is the better guide to what most couples spend, is about $24,000.",
+        "source": "Source: The Knot 2026 Real Weddings Study",
+        "verified": true,
+        "note": "The average is pulled upward by the most expensive weddings. The median is the better guide to what most couples spend."
+      },
+      "whatThisIs": "A wedding is a dozen separate contracts signed months apart, each with its own deposit, its own cancellation terms and its own list of what is not included. The budget usually survives the first three and then stops being a budget.",
+      "ifYouUse": "You start from a total you have actually agreed, split across categories, with a named contingency rather than an optimistic one. Every vendor contract is read against the same short list of terms: what is included, what is extra, what happens on a date change, and what happens on a cancellation. You keep one page that shows what is committed and what is left.",
+      "ifYouSkip": "Deposits are usually non-refundable and are paid early, when the budget is still a guess. Service charges, overtime, delivery and setup fees are often outside the quoted price. By the time the gap appears, most of the money is already committed and the only remaining choice is to spend more.",
+      "inside": {
+        "Lessons": [
+          "Why the quoted price and the final invoice differ, category by category.",
+          "Deposits, cancellation terms and date changes: what you are agreeing to.",
+          "Building a contingency that is a number rather than a hope."
+        ],
+        "Script": [
+          "\"Could you send a quote showing service charges, overtime and setup fees as separate lines?\"",
+          "\"What happens to the deposit if we move the date rather than cancel?\"",
+          "\"Is this price held until the event, and what can change it?\""
+        ],
+        "Forms": [
+          "A master budget page: category, agreed figure, committed to date, remaining.",
+          "A vendor page for each supplier: what is included, what is extra, key dates.",
+          "A deposit log showing what has been paid and what each payment secures."
+        ],
+        "Checklist": [
+          "Total budget agreed and written down before the first deposit.",
+          "Every contract read for cancellation, date-change and overtime terms.",
+          "Final headcount deadline and its cost consequence noted for each vendor."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 3 — What is not in the quote",
+          "body": "Catering quotes are usually per head before service charge. Venues often charge for overtime by the hour after a stated time. Florists and rental firms bill delivery, setup and collection separately. None of these are hidden; they are simply quoted elsewhere.",
+          "callout": "Ask for one quote with every line on it. Then compare."
+        },
+        "Script": {
+          "heading": "Before paying a deposit",
+          "lines": [
+            "\"What happens to this deposit if we move the date?\"",
+            "\"Is the price held until the event?\"",
+            "\"What is charged on top of this quote?\""
+          ]
+        },
+        "Forms": {
+          "heading": "Vendor record",
+          "fields": [
+            {
+              "label": "Vendor and category",
+              "value": ""
+            },
+            {
+              "label": "Quoted price — includes what",
+              "value": ""
+            },
+            {
+              "label": "Billed separately",
+              "value": ""
+            },
+            {
+              "label": "Deposit paid and date",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before the deposit",
+          "items": [
+            {
+              "text": "Total budget agreed and written down",
+              "done": true
+            },
+            {
+              "text": "Contract read for cancellation terms",
+              "done": false
+            },
+            {
+              "text": "Date-change terms understood",
+              "done": false
+            },
+            {
+              "text": "Overtime and setup fees itemized",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    },
+    {
+      "slug": "solar-quote-financing-guide",
+      "status": "coming_soon",
+      "name": "Signing a Residential Solar Contract",
+      "oneLine": "Comparing solar quotes, and understanding the loan or lease before you sign.",
+      "metaTitle": "Signing a Residential Solar Contract — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for comparing residential solar quotes and reading the loan or lease terms, including dealer fees, before you sign.",
+      "stake": {
+        "amount": "$25,000",
+        "lead": "at stake",
+        "eyebrow": "What is at stake in this decision",
+        "line": "The cost of an average residential solar project. When it is financed, dealer fees commonly add 10% to 30% of the cash price to the loan, and sometimes more.",
+        "source": "Source: Consumer Financial Protection Bureau, Issue Spotlight on solar financing, August 2024",
+        "verified": true,
+        "note": "The CFPB also notes that these fees are usually added to the loan principal and are not reflected in the stated APR. Federal tax credit rules have changed since that report; check the current position before relying on any credit figure."
+      },
+      "whatThisIs": "Two decisions are being made at the same time and presented as one: what equipment goes on your roof, and what loan or lease pays for it. They are quoted together, and the second one is usually the one that costs the most.",
+      "ifYouUse": "You ask for the cash price and the financed price separately, so you can see what the financing costs. You know what a dealer fee is, where it sits, and why it does not appear in the APR. You compare production estimates on the same assumptions, and you know what the contract says about the roof, the warranty and what happens if you sell the house.",
+      "ifYouSkip": "A dealer fee is a markup added to the loan principal, and the CFPB found it is commonly 10% to 30% of the cash price and sometimes above 50%. Because it is folded into principal rather than the rate, a low advertised APR can sit on top of a much larger amount borrowed. Over a twenty-year term that difference is substantial, and the contract is signed in an evening.",
+      "inside": {
+        "Lessons": [
+          "Cash price versus financed price, and where the dealer fee sits.",
+          "Why a low advertised APR can cost more than a higher one.",
+          "Production estimates: what assumptions make two quotes incomparable."
+        ],
+        "Script": [
+          "\"Please quote me the cash price and the financed price as two separate numbers.\"",
+          "\"What is the dealer fee or finance fee on this loan, in dollars?\"",
+          "\"What happens to this agreement if I sell the house before it ends?\""
+        ],
+        "Forms": [
+          "A quote comparison page: system size, production estimate, cash price, financed price.",
+          "A financing page recording amount borrowed, rate, term, fees and total repayable.",
+          "A contract questions page covering roof penetrations, warranty and transfer on sale."
+        ],
+        "Checklist": [
+          "Cash price obtained in writing from every installer.",
+          "Dealer or finance fee stated in dollars, not as a percentage of something unspecified.",
+          "Transfer terms read, in case the house is sold during the agreement."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 2 — The dealer fee",
+          "body": "A dealer fee is a markup the installer pays the lender to offer a low rate, then recovers from you by adding it to the amount borrowed. It goes by many names: program fee, platform fee, original issue discount. It is usually not in the APR.",
+          "callout": "Ask for the cash price. The gap between cash and financed is the fee."
+        },
+        "Script": {
+          "heading": "On the quote call",
+          "lines": [
+            "\"What is the cash price for this exact system?\"",
+            "\"What is the dealer fee, in dollars?\"",
+            "\"Is that fee included in the APR you quoted me?\""
+          ]
+        },
+        "Forms": {
+          "heading": "Financing",
+          "fields": [
+            {
+              "label": "Cash price",
+              "value": ""
+            },
+            {
+              "label": "Amount financed",
+              "value": ""
+            },
+            {
+              "label": "Difference (dealer fee)",
+              "value": ""
+            },
+            {
+              "label": "Rate, term, total repayable",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before you sign",
+          "items": [
+            {
+              "text": "Cash price received in writing",
+              "done": true
+            },
+            {
+              "text": "Dealer fee stated in dollars",
+              "done": false
+            },
+            {
+              "text": "Production estimates on the same assumptions",
+              "done": false
+            },
+            {
+              "text": "Transfer-on-sale terms read",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    },
+    {
+      "slug": "homebuyer-agent-commission-guide",
+      "status": "coming_soon",
+      "name": "The Buyer's Agent Agreement",
+      "oneLine": "Understanding what you are signing, and what the commission covers.",
+      "metaTitle": "The Buyer's Agent Agreement — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for reading a buyer representation agreement, understanding buyer-agent commission, and knowing what to ask before you sign.",
+      "stake": {
+        "amount": "about 2.4%",
+        "lead": "at stake",
+        "eyebrow": "What is at stake in this decision",
+        "line": "The average buyer’s agent commission, which is roughly $9,600 on a $400,000 home.",
+        "source": "Source: Redfin, 2025",
+        "verified": true,
+        "note": "Redfin publishes the percentage. The $9,600 is that percentage applied to a $400,000 price, for illustration. Commissions are negotiable and vary by price band and market."
+      },
+      "whatThisIs": "Before an agent shows you homes, you now sign an agreement that sets out what they do, how long it runs, and how much they are paid. It is a contract about money, signed at the start, when the conversation is still about houses.",
+      "ifYouUse": "You read the four terms that matter: the rate, the length, the geographic and property scope, and how it ends. You know what is negotiable and what asking looks like. You understand how the fee gets paid at closing and what happens if the seller contributes less than the agreed rate.",
+      "ifYouSkip": "The agreement can be exclusive, can run for months, and can commit you to a fee on a property you find yourself. The rate is negotiable but only before signing. On a typical purchase the sum involved is in the thousands, agreed in a document people sign without reading because it arrives before the part they came for.",
+      "inside": {
+        "Lessons": [
+          "The four terms that decide what the agreement costs you.",
+          "How the fee is paid at closing, and what happens if the seller offers less.",
+          "What exclusivity means, and what a protection period does after it ends."
+        ],
+        "Script": [
+          "\"Is the rate in this agreement negotiable, and what are you able to offer?\"",
+          "\"Can we make this agreement shorter, or limit it to a specific area?\"",
+          "\"If the seller contributes less than this rate, who pays the difference?\""
+        ],
+        "Forms": [
+          "An agreement summary page: rate, term, scope, termination, protection period.",
+          "A comparison page for two or three agents on the same terms.",
+          "A closing-cost page showing where the fee appears and who pays it."
+        ],
+        "Checklist": [
+          "Rate, term and scope read and written down before signing.",
+          "Termination clause understood, including any notice period.",
+          "The difference question asked and answered in writing."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 1 — Four terms",
+          "body": "Rate, length, scope and exit. Everything else in a buyer representation agreement describes service. These four decide what it costs and how long you are committed. All four are negotiable before you sign and none are after.",
+          "callout": "A shorter term costs you nothing and is usually granted if asked."
+        },
+        "Script": {
+          "heading": "Before signing",
+          "lines": [
+            "\"Is this rate negotiable?\"",
+            "\"Could we make the term 30 days rather than six months?\"",
+            "\"If the seller contributes less, who covers the difference?\""
+          ]
+        },
+        "Forms": {
+          "heading": "Agreement summary",
+          "fields": [
+            {
+              "label": "Commission rate agreed",
+              "value": ""
+            },
+            {
+              "label": "Term — start and end",
+              "value": ""
+            },
+            {
+              "label": "Area and property types covered",
+              "value": ""
+            },
+            {
+              "label": "How I can end it",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before you sign",
+          "items": [
+            {
+              "text": "Rate read and confirmed",
+              "done": true
+            },
+            {
+              "text": "Term length agreed",
+              "done": false
+            },
+            {
+              "text": "Termination clause understood",
+              "done": false
+            },
+            {
+              "text": "Shortfall question answered in writing",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    },
+    {
+      "slug": "timeshare-presentation-guide",
+      "status": "coming_soon",
+      "name": "At a Timeshare Presentation",
+      "oneLine": "Knowing the true lifetime cost, and how to leave without signing.",
+      "metaTitle": "At a Timeshare Presentation — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for working out the true lifetime cost of a timeshare and leaving a sales presentation without signing.",
+      "stake": {
+        "amount": "$23,160",
+        "lead": "at stake",
+        "eyebrow": "What is at stake in this decision",
+        "line": "The average timeshare transaction, plus roughly $1,480 a year in maintenance fees that continue for as long as you own it.",
+        "source": "Source: ARDA/EY State of the Vacation Timeshare Industry, 2025 edition (2024 data)",
+        "verified": true,
+        "note": "A later edition is reported to show higher figures, but we could not confirm it against the industry report itself, so the confirmed 2024 numbers are shown here."
+      },
+      "whatThisIs": "You are in a room, probably on holiday, probably having been offered something free to be there. The presentation is designed to end in a signature on the same day, and that design is the product.",
+      "ifYouUse": "You arrive with the arithmetic already done: purchase price, annual fees, how those fees have risen, and what it costs over the years you expect to use it. You know the common pressure techniques by name, so they are recognizable rather than persuasive. You have a prepared way of leaving that does not require an argument.",
+      "ifYouSkip": "The maintenance fee is the part that outlasts everything. It is annual, it rises, and it continues whether or not you use the week. Resale markets for timeshares are notoriously thin. The cancellation window after signing is short and varies by state, which is exactly why same-day signing is encouraged.",
+      "inside": {
+        "Lessons": [
+          "Total cost of ownership: purchase price plus fees, over the years you will use it.",
+          "Maintenance fees: how they rise, and why they continue if you stop going.",
+          "What resale actually looks like, and what the cancellation window is for."
+        ],
+        "Script": [
+          "\"I do not sign anything on the day I first see it. Please send the documents and I will read them at home.\"",
+          "\"What have the maintenance fees been for each of the last five years?\"",
+          "\"What is the rescission period in this state, and where is it written in the contract?\""
+        ],
+        "Forms": [
+          "A lifetime-cost page: price, annual fee, assumed increase, years, total.",
+          "A comparison page setting that total against booking the same trips directly.",
+          "A pressure-technique log so you can note what is being used, as it happens."
+        ],
+        "Checklist": [
+          "The arithmetic completed before entering the room, not during.",
+          "Nothing signed on the day, whatever the offer is said to expire.",
+          "The rescission period located in the contract text before any signature."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 2 — The fee that does not stop",
+          "body": "The purchase price is paid once. The maintenance fee is annual, it rises most years, and it is owed whether or not you travel. Over twenty years it is usually the larger number of the two.",
+          "callout": "Ask for the last five years of fees. The trend is the answer."
+        },
+        "Script": {
+          "heading": "Leaving without signing",
+          "lines": [
+            "\"I do not sign anything the first day I see it.\"",
+            "\"Please send the documents and I will read them at home.\"",
+            "\"If the offer is not available next week, then it is not for me.\""
+          ]
+        },
+        "Forms": {
+          "heading": "Lifetime cost",
+          "fields": [
+            {
+              "label": "Purchase price",
+              "value": ""
+            },
+            {
+              "label": "Current annual maintenance fee",
+              "value": ""
+            },
+            {
+              "label": "Fee five years ago",
+              "value": ""
+            },
+            {
+              "label": "Years I expect to use it",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before the presentation",
+          "items": [
+            {
+              "text": "Lifetime cost worked out in advance",
+              "done": true
+            },
+            {
+              "text": "Comparison with booking directly done",
+              "done": true
+            },
+            {
+              "text": "Exit line agreed with whoever I am with",
+              "done": false
+            },
+            {
+              "text": "Decided in advance: nothing signed today",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    },
+    {
+      "slug": "ivf-clinic-cost-guide",
+      "status": "coming_soon",
+      "name": "Choosing an IVF Clinic",
+      "oneLine": "Comparing clinics, costs and financing packages before you commit to a cycle.",
+      "metaTitle": "Choosing an IVF Clinic — fillable decision guide",
+      "metaDescription": "A $99 fillable PDF for comparing IVF clinics on cost and terms, and reading a multi-cycle or refund package before you commit.",
+      "stake": {
+        "amount": "$15,000 to $25,000",
+        "lead": "at stake",
+        "eyebrow": "What is at stake in this decision",
+        "line": "The usual all-in cost of a single IVF cycle, and many patients go through more than one.",
+        "source": "Source: published US cost estimates, 2025 to 2026",
+        "verified": false,
+        "note": "Published figures disagree. One widely cited professional-body estimate of about $12,400 covers the procedure only and excludes medication and genetic testing; all-in estimates range from roughly $15,000 to $30,000 depending on what is counted. Treat this as a range, not a price. Your clinic's written quote is the only figure that applies to you."
+      },
+      "whatThisIs": "Clinics quote differently, include different things, and publish success figures that are not calculated the same way. Multi-cycle and refund packages add a second set of terms on top. This guide is about the comparison and the paperwork, and nothing else.",
+      "ifYouUse": "You get written, itemized quotes and put them on one page, so you can see what each clinic includes and what it leaves out. You know which questions to ask about how a published figure is calculated and what population it describes. If a package is offered, you read the eligibility, exclusion and refund terms before, rather than after.",
+      "ifYouSkip": "Medication, anaesthesia, storage, genetic testing and transfers are often quoted separately, so two quotes that look alike can differ by thousands. Refund and multi-cycle packages carry eligibility criteria and exclusions that decide whether the refund ever applies. These are financial terms, agreed at a point when very little attention is available for them.",
+      "inside": {
+        "Lessons": [
+          "What a quote usually includes, and the five things usually quoted separately.",
+          "How published clinic figures can be calculated differently, and what to ask.",
+          "Multi-cycle and refund packages: eligibility, exclusions and what triggers a refund."
+        ],
+        "Script": [
+          "\"Please send an itemized written quote showing what is included and what is billed separately.\"",
+          "\"How is that figure calculated, and which patients are counted in it?\"",
+          "\"For this package: what makes someone ineligible, and what exactly triggers a refund?\""
+        ],
+        "Forms": [
+          "A clinic comparison page with the same cost lines for each clinic.",
+          "A package terms page: eligibility, exclusions, refund triggers, time limits.",
+          "A questions page for your consultation, with room for the answer given."
+        ],
+        "Checklist": [
+          "Itemized written quotes obtained from every clinic being considered.",
+          "Medication, storage and testing costs confirmed separately.",
+          "Package terms read in full before any payment is made."
+        ]
+      },
+      "preview": {
+        "Lessons": {
+          "heading": "Lesson 1 — What is in the quote",
+          "body": "A cycle quote often covers monitoring, retrieval, laboratory work and one transfer. Medication, anaesthesia, genetic testing, embryo storage and later transfers are commonly quoted separately. Two clinics can quote the same number and mean different things.",
+          "callout": "Ask for one itemized quote. Compare the lines, not the totals."
+        },
+        "Script": {
+          "heading": "At the consultation",
+          "lines": [
+            "\"Could I have that quote itemized, in writing?\"",
+            "\"What is billed separately from this figure?\"",
+            "\"How is that published figure calculated?\""
+          ]
+        },
+        "Forms": {
+          "heading": "Clinic comparison",
+          "fields": [
+            {
+              "label": "Quoted cycle cost — includes what",
+              "value": ""
+            },
+            {
+              "label": "Medication, estimated",
+              "value": ""
+            },
+            {
+              "label": "Testing and storage",
+              "value": ""
+            },
+            {
+              "label": "Additional transfers",
+              "value": ""
+            }
+          ]
+        },
+        "Checklist": {
+          "heading": "Before you commit",
+          "items": [
+            {
+              "text": "Itemized written quote received",
+              "done": true
+            },
+            {
+              "text": "Medication cost estimated separately",
+              "done": false
+            },
+            {
+              "text": "Package exclusions read",
+              "done": false
+            },
+            {
+              "text": "Refund trigger understood in writing",
+              "done": false
+            }
+          ]
+        }
+      },
+      "previewImages": {}
+    }
+  ]
+}

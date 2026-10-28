@@ -1,0 +1,67 @@
+# Veyl — Apache / LiteSpeed settings for shared hosting (Hostinger, cPanel and similar).
+
+Options -Indexes
+DirectoryIndex index.php index.html
+ErrorDocument 404 /404.php
+
+# UTF-8 everywhere
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS. If your host has its own "Force HTTPS" switch (Hostinger hPanel >
+  # Security > SSL), use that instead and comment these two lines out.
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # Product pages: /products/car-buying-out-the-door-guide/ -> products/view.php?slug=...
+  RewriteRule ^products/([a-z0-9][a-z0-9-]{1,78})/?$ /products/view.php?slug=$1 [L,QSA]
+
+  # The sitemap and llms.txt are generated from the product data, so they never
+  # go out of date.
+  RewriteRule ^sitemap\.xml$ /sitemap.php [L]
+  RewriteRule ^llms\.txt$ /llms.php [L]
+
+  # Trailing slash for the main sections, so there is one address per page.
+  RewriteRule ^(about|products|faq|terms|disclaimer|privacy|thank-you)$ /$1/ [R=301,L]
+</IfModule>
+
+# Nothing may read a data file directly, even if one is ever copied into the web folder.
+<FilesMatch "\.(json|sqlite|sqlite-wal|sqlite-shm|log|md|example\.php)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  # PHP pages set their own full policy, including CSP. These cover static files.
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  <FilesMatch "\.(woff2|webp|png|jpg|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.php$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+  AddType image/webp .webp
+  AddType image/svg+xml .svg
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
+</IfModule>

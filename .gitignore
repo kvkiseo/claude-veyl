@@ -1,0 +1,16 @@
+# Your secrets. Created from private_html/config.example.php, never committed.
+private_html/config.php
+
+# Order records and mail log, created at runtime.
+private_html/data/veyl.sqlite
+private_html/data/veyl.sqlite-wal
+private_html/data/veyl.sqlite-shm
+private_html/data/mail.log
+
+# Product PDFs are your paid goods. Keep them out of version control.
+private_html/kits/*.pdf
+
+# Working copy: the original archives, the build tree and scratch output.
+work/
+
+.DS_Store

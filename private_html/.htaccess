@@ -1,0 +1,9 @@
+# Safety net. If this folder is ever placed inside the public web folder by mistake,
+# nothing in it can be opened from a web address.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order allow,deny
+  Deny from all
+</IfModule>

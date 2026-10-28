@@ -1,0 +1,30 @@
+{
+  "_readme": [
+    "Influencer discount codes. This file lives outside the web root and is never reachable by URL.",
+    "",
+    "Every valid code gives the buyer the same discount (set by pricing.discountPercent in products.json:",
+    "10% off $99.00 = $89.10) and owes that influencer the same flat commission (pricing.commissionCents: $50.00).",
+    "",
+    "Fields:",
+    "  code       Letters, digits and dashes only. Not case sensitive: VEYL10 and veyl10 are the same code.",
+    "  influencer A name for your own records. It is never shown on the website.",
+    "  active     true for a working code. Set to false to switch a code off without deleting its history.",
+    "  products   \"all\", or a list of product slugs the code works for, e.g. [\"car-buying-out-the-door-guide\"].",
+    "  note       Free text for your own records. Optional.",
+    "",
+    "Several influencers may have their own code for the same product. Reports are kept per code,",
+    "so each one is paid for the sales their own code brought in.",
+    "",
+    "The entry below is a disabled example. It cannot be used by anyone while \"active\" is false.",
+    "To add a real code, copy the example, give it a new code and name, and set \"active\" to true."
+  ],
+  "codes": [
+    {
+      "code": "EXAMPLE-DISABLED",
+      "influencer": "Example entry — not a working code",
+      "active": false,
+      "products": "all",
+      "note": "Template only. Copy this line, change the code and name, then set active to true."
+    }
+  ]
+}

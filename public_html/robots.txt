@@ -1,0 +1,9 @@
+# Veyl — the public pages are open to search engines and AI assistants.
+# Only the ordering endpoints and the private download pages are off limits.
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /thank-you/
+
+Sitemap: https://veyl.kiseo.io/sitemap.xml
